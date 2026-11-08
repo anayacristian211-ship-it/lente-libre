@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lente Libre | Portafolio Fotográfico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">📸 LENTE LIBRE</div>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#galeria">Galería</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <button id="tema" class="tema-btn">🌙 Modo oscuro</button>
+</header>
+
+<section class="hero" id="inicio">
+    <div class="hero-contenido">
+        <p class="etiqueta">FOTOGRAFÍA PROFESIONAL</p>
+        <h1>Capturando momentos,<br>creando recuerdos.</h1>
+        <p>La fotografía es el arte de detener el tiempo y conservar las emociones.</p>
+        <a href="#galeria" class="boton">Ver mi trabajo</a>
+    </div>
+</section>
+
+<section class="galeria-seccion" id="galeria">
+    <h2>Mi galería fotográfica</h2>
+    <p class="descripcion">Explora algunos de mis mejores trabajos.</p>
+
+    <div class="filtros">
+        <button class="filtro activo" data-categoria="todos">Todos</button>
+        <button class="filtro" data-categoria="bodas">Bodas</button>
+        <button class="filtro" data-categoria="retratos">Retratos</button>
+        <button class="filtro" data-categoria="paisajes">Paisajes</button>
+        <button class="filtro" data-categoria="eventos">Eventos</button>
+    </div>
+
+    <div class="galeria" id="galeriaFotos"></div>
+</section>
+
+<div class="lightbox" id="lightbox">
+    <button class="cerrar" id="cerrar">&times;</button>
+    <button class="anterior" id="anterior">&#10094;</button>
+
+    <div class="visor-contenido">
+        <img id="imagenGrande" src="" alt="Fotografía ampliada">
+        <p id="tituloImagen"></p>
+        <p id="contador"></p>
+    </div>
+
+    <button class="siguiente" id="siguiente">&#10095;</button>
+</div>
+
+<section class="sobre-mi" id="sobre-mi">
+    <div class="sobre-imagen">
+        <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?auto=format&fit=crop&w=900&q=85"
+             alt="Cámara fotográfica profesional">
+    </div>
+
+    <div class="sobre-texto">
+        <h2>Sobre mí</h2>
+        <h3>Hola, soy el fotógrafo de Lente Libre.</h3>
+        <p>Soy un fotógrafo apasionado por capturar momentos especiales, emociones y paisajes. Mi objetivo es convertir cada fotografía en un recuerdo inolvidable.</p>
+
+        <h3>Mi equipo</h3>
+        <p>Trabajo con cámaras profesionales, lentes especializados, iluminación y herramientas de edición digital.</p>
+
+        <h3>Mis servicios</h3>
+        <ul>
+            <li>Fotografía de bodas.</li>
+            <li>Sesiones de retratos.</li>
+            <li>Fotografía de paisajes.</li>
+            <li>Fotografía de eventos.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="contacto" id="contacto">
+    <h2>Solicita tu sesión fotográfica</h2>
+    <p>Cuéntame qué tipo de fotografía necesitas.</p>
+
+    <form id="formulario">
+        <input type="text" id="nombre" placeholder="Nombre completo" required>
+        <input type="email" id="correo" placeholder="Correo electrónico" required>
+        <input type="tel" id="telefono" placeholder="Número de teléfono" required>
+
+        <select id="servicio" required>
+            <option value="">Selecciona un servicio</option>
+            <option value="Bodas">Fotografía de bodas</option>
+            <option value="Retratos">Sesión de retratos</option>
+            <option value="Paisajes">Fotografía de paisajes</option>
+            <option value="Eventos">Fotografía de eventos</option>
+        </select>
+
+        <textarea id="mensaje" placeholder="Cuéntame cómo sería tu sesión ideal..." required></textarea>
+
+        <button type="submit">Enviar solicitud</button>
+    </form>
+
+    <p id="confirmacion"></p>
+</section>
+
+<footer>
+    <h3>📸 LENTE LIBRE</h3>
+    <p>Capturando momentos para toda la vida.</p>
+    <p>© 2026 Lente Libre - Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
